@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./TT-Norms-Pro-Trial-4-100/TT_Norms_Pro_Trial_4-100/TT_Norms_Pro_Trial_Bold.ttf")
+        format("truetype");
+    font-weight: 700;
+    font-style: 700;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url("./TT-Norms-Pro-Trial-4-100/TT_Norms_Pro_Trial_4-100/TT_Norms_Pro_Trial_Regular.ttf")
+        format("truetype");
+    font-weight: 400;
+    font-style: 400;
+}
+
+* {
+    font-family: "MyFont", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topHeader {
+    height: 35px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.toolbarHeader {
+    height: 75px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerImage {
+    height: 55px;
+    width: 135px;
+}
+
+.megaMenuHeader {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.megaMenuHeader li {
+    font-size: 15px;
+    font-weight: 600;
+    color: #141215;
+    cursor: pointer;
+}
+
+.blueText {
+    color: #046ca3 !important;
+}
+
+.greenText {
+    color: #97c24e !important;
+}
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headerActions button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.searchBtn {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border: 2px solid #919090 !important;
+    background: white !important;
+}
+
+.searchBtn span {
+    font-size: 16px;
+    color: #555;
+}
+
+.iconBtn {
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.announcementBar {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 2px solid #535353;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 16px;
+}
+
+.announcementBar a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.heroSection {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.heroSection img {
+    width: 100%;
+    /* display: block; */
+}
+
+.categoryNav {
+    border-top: 2px solid #e4e1e5;
+    border-bottom: 2px solid #e4e1e5;
+    background: #fff;
+}
+.categoryNav ul {
+    height: 70px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.categoryNav a {
+    text-decoration: none;
+    color: #141215;
+    font-size: 20px;
+    font-weight: 700;
+}
+.categoryNav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
