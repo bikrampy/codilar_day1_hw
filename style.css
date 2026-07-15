@@ -40,6 +40,12 @@
     align-items: center;
 }
 
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .headerImage {
     height: 55px;
     width: 135px;
@@ -103,14 +109,14 @@
 }
 
 .announcementBar {
-    height: 42px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-top: 2px solid #535353;
     border-bottom: 1px solid #d9d9d9;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .announcementBar a {
@@ -152,4 +158,88 @@
 .categoryNav a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
+}
+
+.menuBtn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mobileCategory {
+    display: none;
+}
+
+@media (max-width: 1159px) {
+    .megaMenuHeader {
+        display: none;
+    }
+    .menuBtn {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerImage {
+        width: 100px;
+        height: auto;
+    }
+
+    .searchBtn {
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: none !important;
+        background: transparent !important;
+    }
+    .searchBtn span {
+        display: none;
+    }
+    .toolbarHeader {
+        height: 60px;
+        padding: 0 10px;
+    }
+    .announcementBar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .categoryNav {
+        padding: 5px;
+    }
+    .mobileCategory {
+        display: block;
+    }
+    .mobileCategoryWrapper {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 10px 10px;
+        scrollbar-width: none;
+    }
+    .mobileCard {
+        flex: 0 0 80px;
+        text-decoration: none;
+        color: #141215;
+        text-align: center;
+    }
+    .mobileCard img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        display: block;
+    }
+    .mobileCard span {
+        display: block;
+        margin-top: 6px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
 }

@@ -10,14 +10,17 @@
         <header>
             <div class="topHeader">SIGN UP FOR 15% OFF</div>
             <nav class="toolbarHeader">
-                <div class="imgHeader">
-                    <a href="/">
-                        <img
-                            class="headerImage"
-                            src="./logo_crocs.svg"
-                            alt="Crocs Logo"
-                        />
-                    </a>
+                <div class="leftSection">
+                    <button class="menuBtn">☰</button>
+                    <div class="imgHeader">
+                        <a href="/">
+                            <img
+                                class="headerImage"
+                                src="./imgs/logo_crocs.svg"
+                                alt="Crocs Logo"
+                            />
+                        </a>
+                    </div>
                 </div>
                 <ul class="megaMenuHeader">
                     <li>Women</li>
@@ -34,6 +37,7 @@
                     <button class="searchBtn">
                         <span>Search</span>
                         <svg
+                            class="searchIcon"
                             width="22"
                             height="22"
                             viewBox="0 0 22 22"
@@ -163,10 +167,43 @@
                 </span>
                 <a href="#">Shop Now!</a>
             </div>
+            <section class="mobileCategory">
+                <div class="mobileCategoryWrapper">
+                    <a href="#" class="mobileCard">
+                        <img src="./imgs/top_icon_1.webp" alt="" />
+                        <span>PRICE DROP</span>
+                    </a>
+
+                    <a href="#" class="mobileCard">
+                        <img src="./imgs/top_icon_2.webp" alt="" />
+                        <span>WONDERFULLY UNORDINARY</span>
+                    </a>
+
+                    <a href="#" class="mobileCard">
+                        <img src="./imgs/top_icon_3.webp" alt="" />
+                        <span>ACCESSORIES</span>
+                    </a>
+                    <a href="#" class="mobileCard">
+                        <img src="./imgs/top_icon_4.webp" alt="" />
+
+                        <span>JIBBITZ™ CHARMS</span>
+                    </a>
+                    <a href="#" class="mobileCard">
+                        <img src="./imgs/top_icon_5.webp" alt="" />
+                        <span>FOR HER</span>
+                    </a>
+                </div>
+            </section>
         </header>
         <main>
             <section class="heroSection">
-                <img src="./Hero_Banner.webp" alt="Crocs Hero Banner" />
+                <picture>
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="./imgs/Hero_Banner_Mobile.webp"
+                    />
+                    <img src="./imgs/Hero_Banner.webp" alt="Crocs Banner" />
+                </picture>
             </section>
             <section class="categoryNav">
                 <ul>
